@@ -6,5 +6,9 @@ target 'Foursquare' do
   use_frameworks!
 
   # Pods for Foursquare
-  pod 'Alamofire'
+  pod 'Alamofire', '~> 5.0.0.beta.1'
+  pod 'PopupDialog', '~> 0.9'
+  pod 'PINRemoteImage', '~> 3.0.0-beta.13'
+  pod 'RealmSwift', '~> 3.13.1'
+  pod 'Cosmos', '~> 18.0.1'
 end

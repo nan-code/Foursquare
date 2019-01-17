@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="VenueContactCellIdentifier" rowHeight="490" id="XbW-yb-qJL" customClass="VenueContactCell" customModule="Foursquare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XbW-yb-qJL" id="4D7-1m-S5n">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tay-Uc-B3x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cV7-6E-xP0">
+                                <rect key="frame" x="10" y="10" width="355" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cV7-6E-xP0" firstAttribute="top" secondItem="tay-Uc-B3x" secondAttribute="top" constant="10" id="aaj-Gn-CX7"/>
+                            <constraint firstAttribute="trailing" secondItem="cV7-6E-xP0" secondAttribute="trailing" constant="10" id="eOM-3M-A5t"/>
+                            <constraint firstItem="cV7-6E-xP0" firstAttribute="leading" secondItem="tay-Uc-B3x" secondAttribute="leading" constant="10" id="fzA-lY-LJx"/>
+                            <constraint firstAttribute="height" constant="30" id="nmd-E2-cBi"/>
+                            <constraint firstAttribute="bottom" secondItem="cV7-6E-xP0" secondAttribute="bottom" id="svD-sh-Zve"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aMJ-oQ-VrC">
+                        <rect key="frame" x="0.0" y="40" width="375" height="259.5"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tay-Uc-B3x" secondAttribute="trailing" id="0k2-5H-lek"/>
+                    <constraint firstItem="tay-Uc-B3x" firstAttribute="top" secondItem="4D7-1m-S5n" secondAttribute="top" id="KWZ-H5-Eqh"/>
+                    <constraint firstItem="aMJ-oQ-VrC" firstAttribute="top" secondItem="tay-Uc-B3x" secondAttribute="bottom" constant="10" id="NXC-DU-KLh"/>
+                    <constraint firstItem="tay-Uc-B3x" firstAttribute="leading" secondItem="4D7-1m-S5n" secondAttribute="leading" id="R03-fM-NQi"/>
+                    <constraint firstItem="aMJ-oQ-VrC" firstAttribute="leading" secondItem="4D7-1m-S5n" secondAttribute="leading" id="UW8-Yf-JmK"/>
+                    <constraint firstAttribute="trailing" secondItem="aMJ-oQ-VrC" secondAttribute="trailing" id="mU5-NF-tfQ"/>
+                    <constraint firstAttribute="bottom" secondItem="aMJ-oQ-VrC" secondAttribute="bottom" id="s19-yF-ESp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="stackView" destination="aMJ-oQ-VrC" id="1kd-9E-rkD"/>
+            </connections>
+            <point key="canvasLocation" x="144.80000000000001" y="242.87856071964021"/>
+        </tableViewCell>
+    </objects>
+</document>
